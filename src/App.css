@@ -5,38 +5,47 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.keyboard {
+  margin-top: 50px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyboard button {
+  all: unset;
+  margin: 5px 3px;
+  padding: 8px;
+  background-color: lightsteelblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.board-row {
+  display: flex;
 }
 
-.read-the-docs {
-  color: #888;
+.cell {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  background-color: lightsteelblue;
+  color: #242424;
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* For both button and field cell */
+.semi-correct {
+  background-color: lightgoldenrodyellow;
+}
+.correct {
+  background-color: darkseagreen;
+}
+.incorrect {
+  background-color: gray;
 }
