@@ -10,10 +10,8 @@
 }
 
 .keyboard button {
-  all: unset;
   margin: 5px 3px;
   padding: 8px;
-  background-color: lightsteelblue;
 }
 
 .board {
